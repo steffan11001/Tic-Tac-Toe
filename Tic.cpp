@@ -140,7 +140,6 @@ int Table::check_win()
         x_flag=0;
         o_flag=0;
     }
-    cout<<x_flag<<" "<<o_flag<<"______________________________________"<<x_win_flag<<" "<<o_win_flag<<endl;
     //check col
     for(int j = 0 ; j < w && x_win_flag==0 && o_win_flag==0; j+=2)
     {
@@ -190,7 +189,6 @@ int Table::check_win()
         o_flag=0;
     
     } 
-    cout<<x_flag<<" "<<o_flag<<"______________________________________"<<x_win_flag<<" "<<o_win_flag<<endl;
     
     if(x_win_flag==1)
         return x_win_flag;
